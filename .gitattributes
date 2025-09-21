@@ -6,7 +6,7 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
+   Name = "Veliki",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Rayfield Interface Suite",
    LoadingSubtitle = "by Sirius",
@@ -43,9 +43,6 @@ local Section = Tab:CreateSection("Section Example")
 local Button = Tab:CreateButton({
    Name = "Infinite Stamina",
    Callback = function()
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 local StaminaModule = require(game.ReplicatedStorage.Systems.Character.Game.Sprinting)
 
 StaminaModule.StaminaLossDisabled = true
@@ -62,9 +59,6 @@ end)
 local Button = Tab:CreateButton({
    Name = "IYR",
    Callback = function()
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/mxsynry/infiniteyield-reborn/refs/heads/scriptblox/source' or 'https://mxsynry.github.io/storage/iyrbackup/legacy/scriptblox/source')))()
    end,
 })
